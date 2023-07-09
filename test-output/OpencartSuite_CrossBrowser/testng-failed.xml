@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [OpencartSuite_CrossBrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome-test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest">
+        <methods>
+          <include name="test_account_Registration"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
+    </classes>
+  </test> <!-- Chrome-test(failed) -->
+  <test thread-count="5" parallel="tests" name="Edge-test(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest">
+        <methods>
+          <include name="test_account_Registration"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
+    </classes>
+  </test> <!-- Edge-test(failed) -->
+</suite> <!-- Failed suite [OpencartSuite_CrossBrowser] -->
